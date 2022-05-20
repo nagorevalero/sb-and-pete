@@ -10,8 +10,5 @@ class HomepageController < ApplicationController
     @movies_list = moodvies.map do |mv| 
       Movie.find_by id: mv.movie_id
     end
-
-    # @movies_all = @movies.all
-    # binding.irb
   end
 end
